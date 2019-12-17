@@ -23,8 +23,8 @@ namespace UWPDemo.Views
         private async void ButtonTapped(object sender, TappedRoutedEventArgs e)
         {
             FlipAnimation.Begin();
-            await Task.Delay(2000);
-            App.Current.Exit();            
+            await Task.Delay(1000);
+            PressButton.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
         }
         void DragableGridManipulationStarted(object sender, ManipulationStartedRoutedEventArgs e)
         {
